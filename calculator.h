@@ -17,11 +17,19 @@ Language: C++
 
 This is the header file for a calculator program that can handle basic arithmetic operations, parentheses, and negative numbers.
 
+Functions:
+- tokenize: Tokenizes the input expression string into numbers, operators, and parentheses, handling negative numbers appropriately.
+- datacuration: Converts the list of tokens from infix notation to postfix notation using the shunting-yard algorithm, with error checking for invalid expressions.
+- buildTree: Constructs a binary expression tree from the postfix notation, with error checking for malformed expressions.
+- eval: Recursively evaluates the expression tree to compute the final result.
+- isOperator: Checks if a string is an operator.
+- precedence: Returns the precedence level of an operator.
+
 */
 
 
 
-
+// Create a node structure for the expression tree
 struct Node {
     string value;
     Node* left;
