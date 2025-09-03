@@ -97,7 +97,8 @@ vector<string> tokenize(const string& expr) {
     return tokens;
 }
 
-// Shunting-yard with error checking
+// Shunting-yard alogrthim implementation with error checking
+// This algorithm will place the digits in operators in the correct order for the tree.
 vector<string> datacuration(const vector<string>& tokens) {
     vector<string> output;
     stack<string> ops;
@@ -167,7 +168,7 @@ Node* buildTree(const vector<string>& postfix) {
     return st.top();
 }
 
-// Evaluate expression tree
+// This is where the experessions are completed. It uses the expression tree to recieve its inputs.
 double eval(Node* root) {
     if (!root->left && !root->right) return stod(root->value); // if the node is a leaf, return its value as a double
 
