@@ -4,7 +4,7 @@ Welcome to my calculator program.
 
 This is a c++ program that can calulate simple expressions.
 
-It uses a binary search and Shunting yard algorithm to calculate the expressions.
+It uses a binary search and shunting yard algorithm to calculate the expressions.
 
 The way it works is as follows:
 1. Tokenization: The input string is broken down into tokens (numbers, operators, and parentheses).
